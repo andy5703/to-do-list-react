@@ -6,13 +6,14 @@ import WorkspaceTool from "./components/WorkspaceTool";
 import CompletedTasks from "./components/CompletedTasks";
 import ToDoTasks from "./components/ToDoTasks";
 import NotificationIcon from './assets/notification.svg';
+import HyacinthIcon from './assets/hyacinth.svg';
 
 function App() {
     return (
         <div className="App">
             <div className="top-bar">
                 <div className="page-title">
-                    <img src="/assets/hyacinth.svg" alt="hyacinth"/>
+                    <img src={HyacinthIcon} alt="hyacinth"/>
                     <div className='title'><span className='bold-text'>monday</span> work management</div>
                 </div>
                 <button type='button'>
