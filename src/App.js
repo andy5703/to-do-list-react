@@ -5,6 +5,7 @@ import ToDo from "./components/ToDo";
 import WorkspaceTool from "./components/WorkspaceTool";
 import CompletedTasks from "./components/CompletedTasks";
 import ToDoTasks from "./components/ToDoTasks";
+import NotificationIcon from './assets/notification.svg';
 
 function App() {
     return (
@@ -21,7 +22,7 @@ function App() {
                 </button>
                 <div className="empty-space"></div>
                 <div className="top-bar-menu">
-                    <MenuOption img="/assets/notification.svg" name="Notifications" title="notifications" />
+                    <MenuOption img={NotificationIcon} name="Notifications" title="notifications" />
                     <MenuOption img="/assets/inbox.svg" name="Update feed" title="update feed"/>
                     <MenuOption img="/assets/add-user.svg" name="Invite members" title="add-user"/>
                     <MenuOption img="/assets/puzzle-piece.svg" name="Monday marketplace" title="puzzzle-piece"/>

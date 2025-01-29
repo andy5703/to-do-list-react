@@ -10,7 +10,7 @@ const ToDoTasks = (props) => {
                 <h1 className="title">{props.title}</h1>
                 <p className="tasks-count">2 Tasks</p>
                 <button className="settings">
-                    <img src="/assets/menu-meatball.svg" alt="menu-meatball"/>
+                    <img src="/src/assets/menu-meatball.svg" alt="menu-meatball"/>
                 </button>
             </div>
             <div className="to-do-tasks">
@@ -23,24 +23,24 @@ const ToDoTasks = (props) => {
                     <div className="task-status">
                         <p>Status</p>
                         <button className="column-information" title='Column information'>
-                            <img src="/assets/info.svg" alt="info"/>
+                            <img src="/src/assets/info.svg" alt="info"/>
                         </button>
                         <button className="settings">
-                            <img src="/assets/menu-meatball.svg" alt="menu"/>
+                            <img src="/src/assets/menu-meatball.svg" alt="menu"/>
                         </button>
                     </div>
                     <div className="task-duedate">
                         <p>Due date</p>
                         <button className="column-information" title='Column information'>
-                            <img src="/assets/info.svg" alt="info"/>
+                            <img src="/src/assets/info.svg" alt="info"/>
                         </button>
                         <button className="settings">
-                            <img src="/assets/menu-meatball.svg" alt="menu"/>
+                            <img src="/src/assets/menu-meatball.svg" alt="menu"/>
                         </button>
                     </div>
                     <div className="task-add-column">
                         <button className="add-column" type='button' title='Add column'>
-                            <img src="/assets/plus.svg" alt="plus"/>
+                            <img src="/src/assets/plus.svg" alt="plus"/>
                         </button>
                     </div>
                 </div>

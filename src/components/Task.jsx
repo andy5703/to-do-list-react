@@ -5,7 +5,7 @@ const Task = (props) => {
             <div className="title">{props.title}</div>
             <div className="empty-space"></div>
             <div className="settings-btn">
-                <img src="/assets/menu-meatball.svg" alt="#"/>
+                <img src="/src/assets/menu-meatball.svg" alt="#"/>
             </div>
         </div>
     );
