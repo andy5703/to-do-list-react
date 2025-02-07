@@ -40,6 +40,8 @@ import AdobeIcon from './assets/adobe-logo-transparent.png'
 import RobotIcon from './assets/robot.svg'
 import MessageBubbleIcon from './assets/message-bubble.svg'
 import ProfileCircle from './assets/profile-circle.svg'
+import DiamondBlueIcon from './assets/diamond.svg'
+import DiamondWhiteIcon from './assets/diamond-white.svg'
 
 function App() {
     return (
@@ -50,8 +52,8 @@ function App() {
                     <div className='title'><span className='bold-text'>monday</span> work management</div>
                 </div>
                 <button type='button'>
-                    <img className='diamond-blue' src="/assets/diamond.svg" alt="diamond"/>
-                    <img className='diamond-white' src="/assets/diamond-white.svg" alt="diamond"/>
+                    <img className='diamond-blue' src={DiamondBlueIcon} alt="diamond"/>
+                    <img className='diamond-white' src={DiamondWhiteIcon} alt="diamond"/>
                     See plans
                 </button>
                 <div className="empty-space"></div>
