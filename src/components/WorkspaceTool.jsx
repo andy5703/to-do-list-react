@@ -1,3 +1,4 @@
+// WorkspaceTool Component
 const WorkspaceTool = (props) => {
     return (
         <button className="workspace-tool" type='button'>

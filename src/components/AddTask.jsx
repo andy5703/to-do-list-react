@@ -1,5 +1,7 @@
+//Libraries Import
 import React, {useState} from "react";
 
+// AddTask Component
 const AddTask = (props) => {
     const [task, setTask] = useState('')
 

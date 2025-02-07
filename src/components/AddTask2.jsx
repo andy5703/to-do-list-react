@@ -1,5 +1,7 @@
+// Libraries Import
 import React, {useState} from "react";
 
+// AddTask2 Component
 const AddTask = () => {
     const [task, setTask] = useState('');
     const [tasks, setTasks] = useState([]);

@@ -1,12 +1,45 @@
+// Libraries or Files Imports
 import './App.scss';
+
+// Component Imports
 import MenuOption from "./components/MenuOption";
 import Task from "./components/Task";
-import ToDo from "./components/ToDo";
 import WorkspaceTool from "./components/WorkspaceTool";
 import CompletedTasks from "./components/CompletedTasks";
 import ToDoTasks from "./components/ToDoTasks";
 import NotificationIcon from './assets/notification.svg';
 import HyacinthIcon from './assets/hyacinth.svg';
+
+// Images Imports
+import Inbox from './assets/inbox.svg'
+import AddUser from './assets/add-user.svg'
+import PuzzlePiece from './assets/puzzle-piece.svg'
+import SearchIcon from './assets/search.svg'
+import SearchBlackIcon from './assets/search-black.svg'
+import QuestionMark from './assets/question-mark.svg'
+import MenuIcon from './assets/menu.svg'
+import MondayLogo from './assets/monday_logo_icon.png'
+import HomeIcon from './assets/home.svg'
+import CarryTaskIcon from './assets/carry-out-task.svg'
+import StarFavoriteIcon from './assets/star-favorite.svg'
+import UpArrowIcon from './assets/up-arrow.svg'
+import DownArrowIcon from './assets/down-arrow.svg'
+import DownArrowWhiteIcon from './assets/down-arrow-white.svg'
+import HouseMainIcon from './assets/house-main.svg'
+import MenuMeatballIcon from './assets/menu-meatball.svg'
+import FilterIcon from './assets/filter.svg'
+import SortIcon from './assets/sort.svg'
+import HideIcon from './assets/hide.svg'
+import BookIcon from './assets/book.svg'
+import PlusIcon from './assets/plug.svg'
+import WhitePlusIcon from './assets/plus-white.svg'
+import PlugIcon from './assets/plug.svg'
+import GmailIcon from './assets/gmail-icon.png'
+import FacebookIcon from './assets/facebook-ads-icon.png'
+import AdobeIcon from './assets/adobe-logo-transparent.png'
+import RobotIcon from './assets/robot.svg'
+import MessageBubbleIcon from './assets/message-bubble.svg'
+import ProfileCircle from './assets/profile-circle.svg'
 
 function App() {
     return (
@@ -24,65 +57,65 @@ function App() {
                 <div className="empty-space"></div>
                 <div className="top-bar-menu">
                     <MenuOption img={NotificationIcon} name="Notifications" title="notifications" />
-                    <MenuOption img="/assets/inbox.svg" name="Update feed" title="update feed"/>
-                    <MenuOption img="/assets/add-user.svg" name="Invite members" title="add-user"/>
-                    <MenuOption img="/assets/puzzle-piece.svg" name="Monday marketplace" title="puzzzle-piece"/>
-                    <MenuOption img="/assets/search-black.svg" name="Search everything" title="search"/>
-                    <MenuOption img="/assets/question-mark.svg" name="Help" title="question-mark"/>
+                    <MenuOption img={Inbox} name="Update feed" title="update feed"/>
+                    <MenuOption img={AddUser} name="Invite members" title="add-user"/>
+                    <MenuOption img={PuzzlePiece} name="Monday marketplace" title="puzzzle-piece"/>
+                    <MenuOption img={SearchBlackIcon} name="Search everything" title="search"/>
+                    <MenuOption img={QuestionMark} name="Help" title="question-mark"/>
                 </div>
                 <div className="divider"></div>
                 <div className="products-switcher">
-                    <img src="/assets/menu.svg" title='Products switcher' alt="menu"/>
+                    <img src={MenuIcon} title='Products switcher' alt="menu"/>
                 </div>
                 <div className="profile">
-                    <img src="/assets/monday_logo_icon.png" alt="monday-logo"/>
+                    <img src={MondayLogo} alt="monday-logo"/>
                     <div className="profile-image">AA</div>
                 </div>
             </div>
             <div className="container">
                 <div className='manage-workspace'>
                     <div className="home section">
-                        <img src="/assets/home.svg" alt="home"/>
+                        <img src={HomeIcon} alt="home"/>
                         <span className='title'>Home</span>
                     </div>
                     <div className="work section">
-                        <img src="/assets/carry-out-task.svg" alt="work"/>
+                        <img src={CarryTaskIcon} alt="work"/>
                         <span className='title'>My work</span>
                     </div>
                     <hr/>
                     <div className="favorites section">
-                        <img src="/assets/star-favorite.svg" alt="favorites"/>
+                        <img src={StarFavoriteIcon} alt="favorites"/>
                         <span className='title'>Favorites</span>
                         <div className='slide-btn'>
-                            <img src="/assets/down-arrow.svg" alt="expand" className="expand"/>
+                            <img src={DownArrowIcon} alt="expand" className="expand"/>
                         </div>
                     </div>
                     <hr/>
                     <div className="main-workspace">
                         <div className='browse-workspace'>
-                            <img src="/assets/house-main.svg" alt="house"/>
+                            <img src={HouseMainIcon} alt="house"/>
                             <h1 className="title">Main workspace</h1>
                             <div className='arrow'>
-                                <img src="/assets/down-arrow.svg" alt="down-arrow"/>
+                                <img src={DownArrowIcon} alt=""/>
                             </div>
                         </div>
                         <div className="empty-space"></div>
                         <button type='button' className='settings-btn'>
-                            <img src="/assets/menu-meatball.svg" alt="menu"/>
+                            <img src={MenuMeatballIcon} alt=""/>
                         </button>
                     </div>
                     <div className="add-workspace">
                         <div className="search-bar">
                             <div className='search-icon'>
-                                <img src="/assets/search.svg" alt="search"/>
+                                <img src={SearchIcon} alt=""/>
                             </div>
                             <input type="text" placeholder='Search'/>
                             <button className='filter-btn' type='button'>
-                                <img src="/assets/filter.svg" alt="filter"/>
+                                <img src={FilterIcon} alt=""/>
                             </button>
                         </div>
                         <button className="add-item" type='button'>
-                            <img src="/assets/plus-white.svg" alt="plus"/>
+                            <img src={WhitePlusIcon} alt=""/>
                         </button>
                     </div>
                     <Task title='My first project'/>
@@ -92,45 +125,45 @@ function App() {
                         <button className="project-title" type='button'>
                             <h1 className="title">My first project</h1>
                             <div className="expand-arrow">
-                                <img src="/assets/down-arrow.svg" alt="down-arrow"/>
+                                <img src={DownArrowIcon} alt="down-arrow"/>
                             </div>
                         </button>
                         <div className="empty-space"></div>
                         <button className="integration-btn-content" type='button'>
                             <div className="icon">
-                                <img src="/assets/plug.svg" alt="plug"/>
+                                <img src={PlugIcon} alt="plug"/>
                             </div>
                             <p className="title">Integration</p>
                             <div className="contents">
-                                <img src="/assets/gmail-icon.png" alt="gmail-icon"/>
-                                <img src="/assets/facebook-ads-icon.png" alt="facebook-ads-icon"/>
-                                <img src="/assets/adobe-logo-transparent.png" alt="adobe-icon"/>
+                                <img src={GmailIcon} alt="gmail-icon"/>
+                                <img src={FacebookIcon} alt="facebook-ads-icon"/>
+                                <img src={AdobeIcon} alt="adobe-icon"/>
                             </div>
                         </button>
                         <button className="automation-center">
                             <div className="icon">
-                                <img src="/assets/robot.svg" alt="robot"/>
+                                <img src={RobotIcon} alt="robot"/>
                             </div>
                             <p className="title">Automate</p>
                         </button>
                         <button className="chat" type='button'>
-                            <img src="/assets/message-bubble.svg" alt="message-empty-bubble"/>
+                            <img src={MessageBubbleIcon} alt="message-empty-bubble"/>
                         </button>
                         <div className="view-activity-log">
                             <button type='button'>AA</button>
                         </div>
                         <button className="invite-members" type='button'>Invite / 1</button>
                         <button className="options" type='button'>
-                            <img src="/assets/menu-meatball.svg" alt="menu-meatball"/>
+                            <img src={MenuMeatballIcon} alt="menu-meatball"/>
                         </button>
                     </div>
                     <div className="workspace-tabs">
                         <button className="task isActive" type='button'>
-                            <img src="/assets/home.svg" alt="home"/>
+                            <img src={HomeIcon} alt="home"/>
                             <p className="title">Main table</p>
                         </button>
                         <button className="add-task-btn" type='button'>
-                            <img src="/assets/plus.svg" alt="plus-icon"/>
+                            <img src={PlusIcon} alt="plus-icon"/>
                         </button>
                     </div>
                     <div className="board-header-options"   >
@@ -139,34 +172,34 @@ function App() {
                                 <button className="create-default" type='button'>New Task</button>
                                 <div className="divider"></div>
                                 <button className='create-custom'>
-                                    <img src="/assets/down-arrow-white.svg" alt="down-arrow"/>
+                                    <img src={DownArrowWhiteIcon} alt="down-arrow"/>
                                 </button>
                             </div>
-                            <WorkspaceTool img='/assets/search.svg' title='Search'/>
-                            <WorkspaceTool img='/assets/profile-circle.svg' title='Person'/>
+                            <WorkspaceTool img={SearchIcon} title='Search'/>
+                            <WorkspaceTool img={ProfileCircle} title='Person'/>
                             <button className="filter">
                                 <button type='button' className='quick-filters'>
-                                    <img src="/assets/filter.svg" alt="filter"/>
+                                    <img src={FilterIcon} alt="filter"/>
                                     <p className="title">Filter</p>
                                 </button>
                                 <button type='button' className='advanced-filters'>
-                                    <img src="/assets/down-arrow.svg" alt="down-arrow"/>
+                                    <img src={DownArrowIcon} alt="down-arrow"/>
                                 </button>
                             </button>
-                            <WorkspaceTool img='/assets/sort.svg' title='Sort'/>
-                            <WorkspaceTool img='/assets/hide.svg' title='Hide'/>
-                            <WorkspaceTool img='/assets/book.svg' title='Group by'/>
+                            <WorkspaceTool img={SortIcon} title='Sort'/>
+                            <WorkspaceTool img={HideIcon} title='Hide'/>
+                            <WorkspaceTool img={BookIcon} title='Group by'/>
                             <button className="settings">
-                                <img src="/assets/menu-meatball.svg" alt="menu-meatball"/>
+                                <img src={MenuMeatballIcon} alt="menu-meatball"/>
                             </button>
                         </div>
                         <div className="empty-space"></div>
                         <div className="board-header-slide">
                             <button className="colapse" type='button'>
-                                <img src="/assets/up-arrow.svg" alt="up-arrow" title='Colapse'/>
+                                <img src={UpArrowIcon} alt="up-arrow" title='Colapse'/>
                             </button>
                             <button className="expand" type='button'>
-                                <img src="/assets/down-arrow.svg" alt="down-arrow" title='Expand'/>
+                                <img src={DownArrowIcon} alt="down-arrow" title='Expand'/>
                             </button>
                         </div>
                     </div>

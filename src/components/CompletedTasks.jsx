@@ -1,14 +1,23 @@
-import ToDo from "./ToDo";
-import AddTask from "./AddTask";
+// Library Import
 import {useState} from "react";
 
+// Component Import
+import ToDo from "./ToDo";
+import AddTask from "./AddTask";
+
+// Image Import
+import DownArrowGreenIcon from '../assets/down-arrow-green.svg'
+import MenuMeatballIcon from '../assets/menu-meatball.svg'
+import InfoIcon from '../assets/info.svg'
+import PlusIcon from '../assets/plug.svg'
+
+// CompletedTasks Component
 const CompletedTasks = (props) => {
     const {title} = props;
     const [tasks, setTasks] = useState([
         {title: 'Finished', owner: '', status: ''},
         {title: 'Finished', owner: '', status: ''},
     ]);
-
     const taskAdded = (title) => {
         setTasks([...tasks, {
             title: title
@@ -19,12 +28,12 @@ const CompletedTasks = (props) => {
         <div className="completed-tasks">
             <div className="header-completed-tasks">
                 <button className="completed" title='Collapse group'>
-                    <img src="/src/assets/down-arrow-green.svg" alt="down-arrow"/>
+                    <img src={DownArrowGreenIcon} alt="down-arrow"/>
                 </button>
                 <h1 className="title">{title}</h1>
                 <p className="tasks-count">2 Tasks</p>
                 <button className="settings">
-                    <img src="/src/assets/menu-meatball.svg" alt="menu-meatball"/>
+                    <img src={MenuMeatballIcon} alt="menu-meatball"/>
                 </button>
             </div>
             <div className="to-do-tasks">
@@ -37,24 +46,24 @@ const CompletedTasks = (props) => {
                     <div className="task-status">
                         <p>Status</p>
                         <button className="column-information" title='Column information'>
-                            <img src="/src/assets/info.svg" alt="info"/>
+                            <img src={InfoIcon} alt="info"/>
                         </button>
                         <button className="settings">
-                            <img src="/src/assets/menu-meatball.svg" alt="menu"/>
+                            <img src={MenuMeatballIcon} alt="menu"/>
                         </button>
                     </div>
                     <div className="task-duedate">
                         <p>Due date</p>
                         <button className="column-information" title='Column information'>
-                            <img src="/src/assets/info.svg" alt="info"/>
+                            <img src={InfoIcon} alt="info"/>
                         </button>
                         <button className="settings">
-                            <img src="/src/assets/menu-meatball.svg" alt="menu"/>
+                            <img src={MenuMeatballIcon} alt="menu"/>
                         </button>
                     </div>
                     <div className="task-add-column">
                         <button className="add-column" type='button' title='Add column'>
-                            <img src="/src/assets/plus.svg" alt="plus"/>
+                            <img src={PlusIcon} alt="plus"/>
                         </button>
                     </div>
                 </div>

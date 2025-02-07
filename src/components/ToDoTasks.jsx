@@ -1,16 +1,24 @@
+// Components Import
 import ToDo from "./ToDo";
 
+// Image Imports
+import DownArrowBlueIcon from '../assets/down-arrow-blue.svg'
+import MenuMeatballIcon from '../assets/menu-meatball.svg'
+import InfoIcon from '../assets/info.svg'
+import PlusIcon from '../assets/plus.svg'
+
+// ToDoTasks Component
 const ToDoTasks = (props) => {
     return (
         <div className="todo-tasks-list">
             <div className="header-completed-tasks">
                 <button className="completed" title='Collapse group'>
-                    <img src="/assets/down-arrow-blue.svg" alt="down-arrow"/>
+                    <img src={DownArrowBlueIcon} alt="down-arrow"/>
                 </button>
                 <h1 className="title">{props.title}</h1>
                 <p className="tasks-count">2 Tasks</p>
                 <button className="settings">
-                    <img src="/src/assets/menu-meatball.svg" alt="menu-meatball"/>
+                    <img src={MenuMeatballIcon} alt="menu-meatball"/>
                 </button>
             </div>
             <div className="to-do-tasks">
@@ -23,24 +31,24 @@ const ToDoTasks = (props) => {
                     <div className="task-status">
                         <p>Status</p>
                         <button className="column-information" title='Column information'>
-                            <img src="/src/assets/info.svg" alt="info"/>
+                            <img src={InfoIcon} alt="info"/>
                         </button>
                         <button className="settings">
-                            <img src="/src/assets/menu-meatball.svg" alt="menu"/>
+                            <img src={MenuMeatballIcon} alt="menu"/>
                         </button>
                     </div>
                     <div className="task-duedate">
                         <p>Due date</p>
                         <button className="column-information" title='Column information'>
-                            <img src="/src/assets/info.svg" alt="info"/>
+                            <img src={InfoIcon} alt="info"/>
                         </button>
                         <button className="settings">
-                            <img src="/src/assets/menu-meatball.svg" alt="menu"/>
+                            <img src={MenuMeatballIcon} alt="menu"/>
                         </button>
                     </div>
                     <div className="task-add-column">
                         <button className="add-column" type='button' title='Add column'>
-                            <img src="/src/assets/plus.svg" alt="plus"/>
+                            <img src={PlusIcon} alt="plus"/>
                         </button>
                     </div>
                 </div>

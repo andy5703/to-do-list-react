@@ -1,3 +1,4 @@
+// MenuOption Component
 const MenuOption = (props) => {
     return (
         <div className="menu-option">
